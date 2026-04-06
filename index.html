@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+<script>
+  window.pixelId = "69cd10a332183f7f78163018";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+  <script>
+  // ALTERE O LINK PARA A PÁGINA QUE QUISER MOSTRAR QUANDO O USUÁRIO TENTAR SAIR
+  const link = 'https://saudecorpo.vercel.app';
+
+  function setBackRedirect(url) {
+    let urlBackRedirect = url;
+    urlBackRedirect = urlBackRedirect =
+      urlBackRedirect.trim() +
+      (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
+      document.location.search.replace('?', '').toString();
+
+    history.pushState({}, '', location.href);
+    history.pushState({}, '', location.href);
+    history.pushState({}, '', location.href);
+
+    window.addEventListener('popstate', () => {
+      console.log('onpopstate', urlBackRedirect);
+      setTimeout(() => {
+        location.href = urlBackRedirect;
+      }, 1);
+    });
+  }
+
+  setBackRedirect(link);
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CNN Saúde</title>
+
+  <script>!function(i,n){i._plt=i._plt||(n&&n.timeOrigin?n.timeOrigin+n.now():Date.now())}(window,performance);</script>
+  <link rel="preload" href="https://scripts.converteai.net/685914c5-09d4-416e-89b1-75ab46ab6914/players/69be150a3d18cfb243060cd8/v4/player.js" as="script">
+  <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+  <link rel="preload" href="https://cdn.converteai.net/685914c5-09d4-416e-89b1-75ab46ab6914/69be1409d54d8d20f105e50c/main.m3u8" as="fetch">
+  <link rel="dns-prefetch" href="https://cdn.converteai.net">
+  <link rel="dns-prefetch" href="https://scripts.converteai.net">
+  <link rel="dns-prefetch" href="https://images.converteai.net">
+  <link rel="dns-prefetch" href="https://api.vturb.com.br">
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #0b1120;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      min-height: 100vh;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    .trust-bar {
+      background: #fff;
+      text-align: center;
+      padding: 5px 12px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #222;
+      letter-spacing: 0.2px;
+    }
+    .trust-bar b { font-weight: 900; }
+
+    .cnn-nav {
+      background: #111;
+      height: 50px;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .cnn-logo {
+      font-size: 22px;
+      font-weight: 900;
+      color: #fff;
+      white-space: nowrap;
+      letter-spacing: -0.5px;
+    }
+    .cnn-logo span { font-size: 14px; font-weight: 600; margin-left: 5px; }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      white-space: nowrap;
+    }
+    .nav-links a svg { width: 15px; height: 15px; }
+    .nav-links a.live { color: #ff3333; }
+
+    .btn-signin {
+      background: transparent;
+      border: 1.5px solid #888;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 5px 14px;
+      cursor: pointer;
+      border-radius: 2px;
+      white-space: nowrap;
+    }
+
+    .page {
+      max-width: 880px;
+      margin: 18px auto 0;
+      padding: 0 16px;
+    }
+
+    .exclusive-banner {
+      background: #cc0000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 14px;
+    }
+    .exclusive-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .dot {
+      width: 9px; height: 9px;
+      background: #fff;
+      border-radius: 50%;
+      flex-shrink: 0;
+      animation: blink 1.4s infinite;
+    }
+    @keyframes blink {
+      0%,100% { opacity:1; transform:scale(1); }
+      50%      { opacity:.4; transform:scale(1.35); }
+    }
+    .btn-watch {
+      background: #fff;
+      color: #cc0000;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      padding: 5px 12px;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .video-row {
+      display: flex;
+      align-items: stretch;
+      background: #0d1320;
+      min-height: 460px;
+    }
+    .side-panel { flex: 0 0 27%; background: #0c1526; }
+    .video-col {
+      flex: 1;
+      background: #111825;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    vturb-smartplayer {
+      display: block !important;
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+
+    .live-bar {
+      background: #0c1526;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 7px 14px;
+    }
+    .live-pill {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 12px; font-weight: 700;
+    }
+    .live-dot {
+      width: 8px; height: 8px;
+      background: #cc0000;
+      border-radius: 50%;
+      animation: blink 1s infinite;
+    }
+    .rec-pill {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 11px; font-weight: 600; color: #ff3333;
+    }
+
+    .bottom-section {
+      text-align: center;
+      padding: 30px 16px 32px;
+    }
+    .bottom-tagline {
+      font-size: 13px; color: #999; margin-bottom: 14px;
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+    }
+    .hashtags {
+      display: flex; justify-content: center; gap: 22px; flex-wrap: wrap;
+    }
+    .hashtags span {
+      color: #5aabff; font-size: 13px; font-weight: 500; cursor: pointer;
+    }
+    .hashtags span:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .nav-links a.watch,
+      .nav-links a.listen,
+      .btn-signin { display: none; }
+      .cnn-nav { padding: 0 12px; height: 44px; }
+      .cnn-logo { font-size: 18px; }
+      .page { padding: 0; margin-top: 0; }
+      .side-panel { display: none; }
+      .video-row { min-height: unset; }
+      .bottom-section { padding: 20px 12px 28px; }
+      .hashtags { flex-direction: column; align-items: center; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="trust-bar">
+    <b>CLICKBANK®</b> | CONFIÁVEL &nbsp;🔒&nbsp; SEGURO
+  </div>
+
+  <div class="cnn-nav">
+    <div class="cnn-logo">CNN <span>Saúde</span></div>
+    <div class="nav-links">
+      <a href="#" class="watch">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+        Assistir
+      </a>
+      <a href="#" class="listen">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+        Ouvir
+      </a>
+      <a href="#" class="live">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="17 2 12 7 7 2"/></svg>
+        TV ao Vivo
+      </a>
+      <a href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </a>
+      <button class="btn-signin">Entrar</button>
+    </div>
+  </div>
+
+  <div class="page">
+
+    <div class="exclusive-banner">
+      <div class="exclusive-label">
+        <div class="dot"></div>
+        COBERTURA EXCLUSIVA
+      </div>
+      <button class="btn-watch">ASSISTIR AGORA</button>
+    </div>
+
+    <div class="video-row">
+      <div class="side-panel"></div>
+      <div class="video-col">
+        <vturb-smartplayer id="vid-69be150a3d18cfb243060cd8"></vturb-smartplayer>
+      </div>
+      <div class="side-panel"></div>
+    </div>
+
+    <div class="live-bar">
+      <div class="live-pill"><div class="live-dot"></div> AO VIVO</div>
+      <div class="rec-pill"><div class="live-dot"></div> GRAVAÇÃO PODE SER REMOVIDA EM BREVE</div>
+    </div>
+
+  </div>
+
+  <div class="bottom-section">
+    <div class="bottom-tagline">
+      🔔 Fique atualizado com as reportagens investigativas da CNN
+    </div>
+    <div class="hashtags">
+      <span>#DisfunçãoErétil</span>
+      <span>#RemédiosNaturais</span>
+      <span>#AvansoNaSaúde</span>
+      <span>#ExclusivoCNN</span>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var s = document.createElement("script");
+    s.src = "https://scripts.converteai.net/685914c5-09d4-416e-89b1-75ab46ab6914/players/69be150a3d18cfb243060cd8/v4/player.js";
+    s.async = true;
+    document.head.appendChild(s);
+  </script>
+
+</body>
+</html>
